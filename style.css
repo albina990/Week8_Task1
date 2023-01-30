@@ -10,7 +10,8 @@
     justify-content: space-between;
     align-items: center;
     color: lightgrey;
-    margin-right:8%;
+    max-width: fit-content;
+    padding-right:8%;
 }
 .header__item a {
     margin-right: 20%;
@@ -21,7 +22,7 @@
     color: rgb(143, 139, 139);
 }
 .header__item {
-    padding: 10% 10% 10% 0;
+    padding: 7% 10% 7% 0;
 }
 .card {
     max-width: 18rem;
@@ -34,7 +35,7 @@
     margin-top: 3vh;
     padding-top: 4%;
     padding-bottom: 3%;
-    max-width: 97%;
+    max-width: 98%;
 }
 .card-body:not(:first-child) {
     text-align: center;
@@ -57,4 +58,9 @@
     color: lightgray;
     text-align: center;
     padding: 2% 0 2% 0;
+}
+@media screen and (max-width:575px){
+    .header__nav-list {
+        flex-wrap: wrap;
+    }
 }
